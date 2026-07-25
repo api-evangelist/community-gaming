@@ -1,8 +1,23 @@
 aid: community-gaming
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/community-gaming.png
 name: Community Gaming
-description: 'Community Gaming is a company surfaced as a portfolio company of multicoin-capital and added
-  to the API Evangelist network as a stub for enrichment. Sector: crypto-web3. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Community Gaming is a web3 esports and gaming platform where players earn cryptocurrency
+  rewards by competing in tournaments and completing quests. Players link a Sequence wallet, collect keys
+  from quests and matches to open loot boxes and giveaway tickets, and enter prize draws paid out in USDC.
+  The platform also serves tournament organizers with hosting tools, sponsorships, and grants. Backed by
+  Multicoin Capital, it publishes a public knowledge center for players and organizers but does not
+  currently document a public developer API, OpenAPI specification, or SDKs.'
 url: https://raw.githubusercontent.com/api-evangelist/community-gaming/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Crypto Web3
+- Gaming
+- Esports
+- Tournaments
+- Rewards
+- Web3
+- Blockchain
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/community-gaming-domain-security.yml
+- type: Documentation
+  name: Community Gaming Knowledge Center
+  url: https://docs.communitygaming.io
+- type: Support
+  name: Community Gaming Knowledge Center
+  url: https://docs.communitygaming.io
 - type: Website
   url: https://communitygaming.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
